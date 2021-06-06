@@ -1,0 +1,22 @@
+{{- if (not .Site.Params.disableThemeToggle) }}
+<script>
+  document.getElementById("theme-toggle").addEventListener("click", () => {
+    var iframe = document.getElementsByClassName("utterances-frame")[0];
+    if (document.body.className.includes("dark")) {
+      if (iframe && iframe.src.includes("theme=github-dark")) {
+        iframe.src = iframe.src.replace(
+          "theme=github-dark",
+          "theme=github-light"
+        );
+      }
+    } else {
+      if (iframe && iframe.src.includes("theme=github-light")) {
+        iframe.src = iframe.src.replace(
+          "theme=github-light",
+          "theme=github-dark"
+        );
+      }
+    }
+  });
+</script>
+{{- end }}

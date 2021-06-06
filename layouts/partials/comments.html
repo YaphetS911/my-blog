@@ -1,0 +1,21 @@
+<script type="text/javascript">
+  (function () {
+    // if (window.location.hostname == "localhost") return;
+    var comment = document.createElement("script");
+    comment.setAttribute("src", "https://utteranc.es/client.js");
+    comment.setAttribute("repo", "YaphetS911/my-blog");
+    comment.setAttribute("issue-term", "pathname");
+    comment.setAttribute("label", "comment");
+    comment.setAttribute("crossorigin", "anonymous");
+    comment.async = true;
+    if (document.body.classList.value.includes("dark")) {
+      comment.setAttribute("theme", "github-dark");
+    } else {
+      comment.setAttribute("theme", "github-light");
+    }
+    var parent = document.getElementsByClassName("post-single")[0];
+    if (parent) {
+      parent.appendChild(comment);
+    }
+  })();
+</script>
