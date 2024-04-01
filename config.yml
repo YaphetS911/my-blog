@@ -1,4 +1,4 @@
-baseURL: https://blog.nobody.ml/
+# baseURL: https://blog.nobody.ml/
 languageCode: en-us
 title: Nobody's Blog
 theme: PaperMod
